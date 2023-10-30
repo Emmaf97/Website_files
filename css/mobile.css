@@ -93,6 +93,7 @@ li::marker{
   grid-area: highlights;
   background-color: #ffff64;
   width: 80%;
+  height: 375px;
   margin:auto;
   border-radius: 5px;
   text-align: center;
@@ -111,6 +112,11 @@ li::marker{
   border-radius: 5px;
   text-align: center;
 } 
+
+#iframe {
+  width: auto;
+  height: 300px;
+}
 
 /* #page > .cardimg {
   grid-area: history;
