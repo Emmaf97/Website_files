@@ -2,7 +2,9 @@ body {
   background-color: rgb(5, 59, 177);
   
 }
-
+ul{
+  list-style: none;
+}
 li::marker{
   content: none;
 }
