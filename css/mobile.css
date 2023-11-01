@@ -35,7 +35,7 @@ li::marker{
   grid-area: head;
   background-color: rgb(5, 59, 177);
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin:auto;
   border-radius: 5px;
 }
@@ -43,7 +43,7 @@ li::marker{
 #page > nav {
   grid-area: nav;
   background-color: #ffa08c;
-  width: 80%;
+  width: 90%;
   margin:auto;
   border-radius: 5px;
   
@@ -53,7 +53,7 @@ li::marker{
   grid-area: main;
   background-color: #ffff64;
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin:auto;
   border-radius: 5px;
 }
@@ -67,7 +67,7 @@ li::marker{
   grid-area: tickets;
   background-color: #ffff64;
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin:auto;
   border-radius: 5px;
   /* background-image: url(..//images/testimage2.png);
@@ -80,7 +80,7 @@ li::marker{
   grid-area: history;
   background-color: #ffff64;
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin:auto;
   border-radius: 5px;
   /* background-image: url(..//images/testimage2.png);
@@ -92,7 +92,7 @@ li::marker{
 #page > #highlights {
   grid-area: highlights;
   background-color: #ffff64;
-  width: 80%;
+  width: 90%;
   height: 375px;
   margin:auto;
   border-radius: 5px;
@@ -107,7 +107,7 @@ li::marker{
 #page > footer {
   grid-area: foot;
   background-color: #8cffa0;
-  width: 80%;
+  width: 90%;
   margin:auto;
   border-radius: 5px;
   text-align: center;
