@@ -152,6 +152,10 @@ text-align: center;
 #page > #gametime > table > tbody >tr {
 background-color: #f7f8f4;
 }
+
+#page > td > .datetime {
+column-span: all;
+}
 #page > #gametime > table > tbody> tr > td > .teamicons{
 /* column-span: all; */
 }
