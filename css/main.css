@@ -1,19 +1,57 @@
 body {
   background-color: rgb(190, 185, 216);
   font-family: Arial, Helvetica, sans-serif;
-  font-size:medium;
+  font-size: medium;
 }
+
 iframe {
   width: 1190px;
   height: 569px;
 }
 
-.animationbanner{
+.animationbanner {}
 
-}
 /* may use an animation for this section instead */
-#animationslogan {
-  
+#animationslogan {}
+
+/* #contactform{
+display: flex;
+margin: auto;
+justify-content: center;
+} */
+label {
+  display: flex;
+  align-items: center;
+  padding-left: 21%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  /* padding-right: 100px;
+margin-right: auto; */
+}
+
+.radiochoice {
+  padding-left: 22%;
+  padding-top: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+input {
+  display: flex;
+  align-items: center;
+  margin-left: 21%;
+  padding-right: 50%;
+  padding-bottom: 10px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  font-size: large;
+  border: solid blue 1px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 47%;
 }
 
 li::marker {
@@ -28,15 +66,34 @@ li::marker {
   width: 100%;
   margin: auto;
   border-radius: 5px;
-} 
+}
 
-#page > header, #historypage > header, #ticketpage >header{
+/*
+Please see the chat log below where I researched different approaches to using common elements for multiple grids.
+After researching I came to the conclusion that I was calling the elements wrong (they are unique id's as they apply to different pages but they share common elements)and adjusted the necessary code.
+The unique id's use the common elements of header, nav and footer while also having extra elements on the page.
+The reason for this was to use take into account the reusabilty of certain elements on the page without having to duplicate the code again. 
+This was the best solution I could come up with that still met the criteria of the assignment.
+
+12/11/23 chatgpt chat log
+https://chat.openai.com/share/b2a8d324-ec99-4c4d-8d8d-39f9655b2cc6
+
+ */
+#page>header,
+#historypage>header,
+#ticketpage>header,
+#teampage>header,
+#contact>header {
   grid-area: head;
   background-color: rgb(57, 5, 177);
   color: rgb(244, 234, 234);
 }
 
-#page > nav, #historypage > nav, #ticketpage > nav{
+#page>nav,
+#historypage>nav,
+#ticketpage>nav,
+#teampage>nav,
+#contact>header {
   grid-area: nav;
   background-color: #b1f4f8;
   font-size: large;
@@ -58,7 +115,7 @@ li::marker {
   background-color: #fcfcfa;
   background-image: url(../images/logo_responsive_version.png);
   background-repeat: space;
-  background-size:contain;
+  background-size: contain;
 }
 
 #page>#history {
@@ -73,7 +130,11 @@ li::marker {
   height: auto;
 }
 
-#page > footer, #historypage > footer, #ticketpage >footer {
+#page>footer,
+#historypage>footer,
+#ticketpage>footer,
+#teampage>footer,
+#contact>footer {
   grid-area: foot;
   background-color: rgb(57, 5, 177);
   color: whitesmoke;
@@ -108,7 +169,7 @@ li::marker {
 
 ul {
   text-align: center;
-  
+
 }
 
 li {
@@ -117,16 +178,15 @@ li {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 3%;
-  /* padding-top: 1%;
-  padding-bottom: 1%; */
   display: inline;
   list-style: none;
-  /* padding-left: 40px;
-  padding-right: 40px; */
   border: solid blue 1px;
   border-radius: 20px;
 }
 
+li:hover {
+  background-color: aqua;
+}
 
 a {
   color: #b0b0f5;
@@ -134,7 +194,7 @@ a {
 }
 
 a:visited {
-  color: #0103FF;
+  color: #0658fb;
 }
 
 #historypage {
@@ -146,6 +206,7 @@ a:visited {
   margin: auto;
   border-radius: 5px;
 }
+
 #ticketpage {
   display: grid;
   grid-template-areas: "head" "nav" "singleticket" "foot";
@@ -155,28 +216,120 @@ a:visited {
   margin: auto;
   border-radius: 5px;
 }
-#ticketpage > #singleticket{
+
+#ticketpage>#singleticket {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 }
+
 #ticketpage>#singleticket {
   grid-area: singleticket;
-  background-color: #fcfcfa;
+  background-color: aqua;
   height: 100%;
   width: 100%;
   margin: auto;
 }
-.cardimgtickets{
+
+#teampage {
+  display: grid;
+  grid-template-areas: "head" "nav" "playerset1" "playerset2" "playerset3" "playerset4" "playerset5" "playerset6" "foot";
+  grid-gap: 20px;
+  text-align: center;
+  width: 100%;
   margin: auto;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  border-radius: 5px;
+}
+
+#teampage>#playerset1,
+#teampage>#playerset2,
+#teampage>#playerset3,
+#teampage>#playerset4,
+#teampage>#playerset5,
+#teampage>#playerset6 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#teampage>#playerset1,
+#teampage>#playerset2,
+#teampage>#playerset3,
+#teampage>#playerset4,
+#teampage>#playerset5,
+#teampage>#playerset6 {
+  background-color: #fcfcfa;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+
+}
+
+#teampage>#playerset1 {
+  grid-area: playerset1;
+  background-color: aqua;
+}
+
+#teampage>#playerset2 {
+  grid-area: playerset2;
+  background-color: aqua;
+}
+
+#teampage>#playerset3 {
+  grid-area: playerset3;
+  background-color: aqua;
+}
+
+#teampage>#playerset4 {
+  grid-area: playerset4;
+  background-color: aqua;
+}
+
+#teampage>#playerset5 {
+  grid-area: playerset5;
+  background-color: aqua;
+}
+
+#teampage>#playerset6 {
+  grid-area: playerset6;
+  background-color: aqua;
+}
+
+.cardimgteam {
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border: solid white 1px;
+  border-radius: 20px;
   width: 100%;
   background-color: #0103FF;
 }
-.cardimgtickets:hover{
+
+.cardimgtickets {
+  margin: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border: solid white 1px;
+  border-radius: 20px;
+  width: 100%;
+  background-color: #0103FF;
+}
+
+.cardimgtickets:hover,
+.cardimgteam:hover {
   background-color: gray;
+}
+
+.ticketbutton {
+  border: solid rgb(245, 245, 249) 1px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.ticketbutton:hover {
+  background-color: #f8f9fb;
 }
 
 #historypage>#earlyinfo {
@@ -190,6 +343,7 @@ a:visited {
   background-color: #fcfcfa;
   height: auto;
 }
+
 #historypage>#history {
   grid-area: history;
   background-color: #fcfcfa;

@@ -9,133 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" media="only screen and (max-width: 414px)" href="../css/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 415px)" href="../css/main.css">
-<!--Link to Chatgpt for research on grid area templates 12/11/23 
-    https://chat.openai.com/share/b2a8d324-ec99-4c4d-8d8d-39f9655b2cc6-->
 
-    <!--I understand that embedded and inline css is not allowed for this assignment.
-    However I was not able to display a custom grid on different pages without declaring the embedded style using a media query.
-    I am using an already established grid in the external css with styling but some elements of the grid are not necessary on all pages.
-    I tried alternative methods to acheive this but I ended up repeating the code multiple times and this is the best solution for what I am trying to achieve.
-    -->
-    <!-- <style>
-        @media (min-width: 414px){
-            section gametime{
-                display: none;
-            } -->
-    <!-- #page {
-    display: grid;
-    grid-template-areas:"head" "nav" "singleticket" "seasonticket" "premiumticket" "foot" ;
-    grid-gap: 10px;
-  } */ -->
-    <!-- ?
-    </style> -->
 </head>
 
-<!-- <div class="gridcontainer">
-    <section class="page">
-        <header>
-            <img src="../images/testimage2.png" alt="Logo Charlotte Hornets">
-            <h1>Welcome to the Hornet Flyers.</h1>
-            <h1>It's time join the Hive.</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="../html/index.html">Home</a></li>
-                <li><a href="../html/index.html">History</a></li>
-                <li><a href="../html/index.html">Team</a></li>
-                <li><a href="../html/index.html">Tickets</a></li>
-                <li><a href="#highlights">Highlights</a></li>
-                <li><a href="../html/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </section>
-<div class="gridcontainer pagetickets">
-    <section class="pagetickets">
-        <div class="singleticket">
-            <div>
-                <img src="../images/testimage2.png" alt="card image">
-                <h1>Meet the Team</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    perspiciatis corrupti ad minima amet reiciendis laboriosam, eius assumenda quasi.</p>
-            </div>
-        </div>
-        <section class="seasonticket">
-            <div>
-                <img src="../images/testimage2.png" alt="card image">
-                <h1>Meet the Team</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    perspiciatis corrupti ad minima amet reiciendis laboriosam, eius assumenda quasi.</p>
-            </div>
-        </section>
-        <section class="premiumticket">
-            <div>
-                <img src="../images/testimage2.png" alt="card image">
-                <h1>Meet the Team</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    perspiciatis corrupti ad minima amet reiciendis laboriosam, eius assumenda quasi.</p>
-            </div>
-        </section>
-        <footer>Copyright 2023</footer>
-    </section>
-</div> -->
-
-
-    <!-- <section class="page"> -->
-    <!-- <div class="gridcontainer">
-        <section id="page">
-            <header>
-                <img src="../images/testimage2.png" alt="Logo Charlotte Hornets">
-                <h1>Welcome to the Hornet Flyers.</h1>
-                <h1>It's time join the Hive.</h1>
-            </header>
-            <nav>
-                <ul>
-                    <li><a href="../html/index.html">Home</a></li>
-                    <li><a href="../html/index.html">History</a></li>
-                    <li><a href="../html/index.html">Team</a></li>
-                    <li><a href="../html/index.html">Tickets</a></li>
-                    <li><a href="#highlights">Highlights</a></li>
-                    <li><a href="../html/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
-    <div class="gridcontainer pagetickets">
-        <section id="pagetickets">
-            <div id="singleticket">
-                <div>
-                    <img src="../images/testimage2.png" alt="card image">
-                    <h1>Meet the Team</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        perspiciatis corrupti ad minima amet reiciendis laboriosam, eius assumenda quasi.</p>
-                </div>
-            </div>
-            <section id="seasonticket">
-                <div>
-                    <img src="../images/testimage2.png" alt="card image">
-                    <h1>Meet the Team</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        perspiciatis corrupti ad minima amet reiciendis laboriosam, eius assumenda quasi.</p>
-                </div>
-            </section>
-            <section id="premiumticket">
-                <div>
-                    <img src="../images/testimage2.png" alt="card image">
-                    <h1>Meet the Team</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        perspiciatis corrupti ad minima amet reiciendis laboriosam, eius assumenda quasi.</p>
-                </div>
-            </section>
-            <footer>Copyright 2023</footer>
-        </section>
-    </div>
-</div> -->
 <body>
     <section id="ticketpage">
         <header>
             <img src="../images/testimage2.png" alt="Logo Charlotte Hornets">
             <h1 class="animationbanner">Welcome to the Hornet Flyers.</h1>
             <h1 id="animationslogan">#JoinTheHive.</h1>
-            <!-- <h1>a fan page dedicated to the charlotte hornets.</h1> -->
         </header>
         <nav>
             <ul>
@@ -147,29 +29,26 @@
                 <li><a href="../html/contact.html">Contact</a></li>
             </ul>
         </nav>
-        <!-- <div id="ticketsection"> -->
             <section id="singleticket">
                 <div class="cardimgtickets">
                     <img src="../images/testimage2.png" alt="card image">
                     <h1>Single Tickets</h1>
                     <div>
-                        <h1>Buy Now</h1>
+                        <h1><a class="ticketbutton" href="https://www.nba.com/hornets/tickets/single">Buy Now</a></h1>
                     </div>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        perspiciatis corrupti ad minima amet reiciendis laboriosam, eius assumenda quasi.</p> -->
                 </div>
                 <div class="cardimgtickets">
                     <img src="../images/testimage2.png" alt="card image">
                     <h1>Season Tickets</h1>
                     <div>
-                        <h1>Buy Now</h1>
+                        <h1><a class="ticketbutton" href="https://www.nba.com/hornets/tickets/memberships">Buy Now</a></h1>
                     </div>
                 </div>
                 <div class="cardimgtickets">
                     <img src="../images/testimage2.png" alt="card image">
                     <h1>Premium Tickets</h1>
                     <div>
-                        <h1><a href="">Buy Now</a></h1>
+                        <h1><a class="ticketbutton" href="https://www.hornetspremium.com/">Buy Now</a></h1>
                     </div>
                 </div>
             </section>
