@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" media="only screen and (max-width: 414px)" href="../css/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 415px)" href="../css/main.css">
+    <!--Link to Chatgpt for research on grid area templates 12/11/23 
+    https://chat.openai.com/share/b2a8d324-ec99-4c4d-8d8d-39f9655b2cc6-->
 </head>
 
 <body>
@@ -16,6 +18,7 @@
         <header>
             <img src="../images/testimage2.png" alt="Logo Charlotte Hornets">
             <h1>Welcome to the Hornet Flyers.</h1>
+            <h1>A fan website dedicated to the Charlotte Hornets</h1>
             <h1>It's time join the Hive.</h1>
         </header>
         <nav>
@@ -33,36 +36,22 @@
             <table>
                 <tbody>
                     <tr>
-                        <td>Team Icon</td>
-                        <td>Name</td>
-                        <td>Time</td>
                     </tr>
                     <tr>
                         <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
                         <td>Charlotte Hornets</td>
+                        <td rowspan="2" class="bordertable"></td>
                         <!--I understand that inline css is not allowed but I was unable to achieve the desired result of having a row span 2 rows without using the inline css of rowspan="2"-->
-                        <td rowspan="2">Tomorrow 12:00pm</td>
+                        <td rowspan="2">November 18th 6:00pm EST</td>
                     </tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
-                        <td>Another Team</td>
+                        <td class="teamicons"><img src="../images/New_York_Knicks.png" alt="card image"> </td>
+                        <td>New York Knicks
+                        </td>
                     </tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr>
-                        <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
-                        <td>Charlotte Hornets</td>
-                        <td rowspan="2">Tomorrow 12:00pm</td>
+                    <tr class="borderrow">
+                        <td colspan="4"></td>
                     </tr>
-                    <tr>
-                        <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
-                        <td>Another Team</td>
-                        <!-- <td>Tomorrow 12:00pm</td> -->
-                    </tr>
-                    <tr></tr>
                     <tr></tr>
                     <tr></tr>
                     <tr></tr>
@@ -70,14 +59,33 @@
                     <tr>
                         <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
                         <td>Charlotte Hornets</td>
-                        <td rowspan="2">Tomorrow 12:00pm</td>
+                        <td rowspan="2" class="bordertable"></td>
+                        <td rowspan="2">November 20th 7:00pm EST</td>
                     </tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
-                        <td>Another Team</td>
-                        <!-- <td>Tomorrow 12:00pm</td> -->
+                        <td class="teamicons"><img src="../images/Boston_Celtics.png" alt="card image"> </td>
+                        <td>Boston Celtics</td>
+                    </tr>
+                    <tr class="borderrow">
+                        <td colspan="4"></td>
                     </tr>
                     <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
+                        <td>Charlotte Hornets</td>
+                        <td rowspan="2" class="bordertable"></td>
+                        <td rowspan="2">November 22 7:00pm EST</td>
+                    </tr>
+                    <tr>
+                        <td class="teamicons"><img src="../images/Washington_Wizards.png" alt="card image"> </td>
+                        <td rowspan="2">Washington Wizards</td>
+                    </tr>
+                    <tr class="borderrow">
+                        <td colspan="4"></td>
+                    </tr>
                     <tr></tr>
                     <tr></tr>
                     <tr></tr>
@@ -121,11 +129,19 @@
         </section>
         <section id="highlights">
             <h1>Hive Member Highlights 2023</h1>
-            <!-- <iframe src="https://www.youtube.com/embed/GJtxXU3ru7M" title="highlight reel" id="iframe"
-                allowfullscreen></iframe> -->
-                <iframe id="iframe" src="https://www.youtube.com/embed/GJtxXU3ru7M?si=gh42cRLf86--QjO5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id="iframe" src="https://www.youtube.com/embed/GJtxXU3ru7M?si=gh42cRLf86--QjO5"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </section>
-        <footer>Copyright 2023</footer>
+        <footer>
+            <ul>
+                <li class="lifooter">Copyright 2023.</li>
+                <li class="lifooter">Address of the organization.</li>
+                <li class="lifooter">Email: <a href="mailto:anemailgoeshere@gmail.com">Testemail@gmail.com</a></li>
+                <li class="lifooter">Tel: 0000000000</li>
+            </ul>
+        </footer>
     </section>
 </body>
 

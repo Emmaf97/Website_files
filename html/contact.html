@@ -12,10 +12,11 @@
 </head>
 
 <body>
-    <section id="page">
+    <section id="contactpage">
         <header>
             <img src="../images/testimage2.png" alt="Logo Charlotte Hornets">
             <h1>Welcome to the Hornet Flyers.</h1>
+            <h1>A fan website dedicated to the Charlotte Hornets</h1>
             <h1>It's time join the Hive.</h1>
         </header>
         <nav>
@@ -30,33 +31,41 @@
         </nav>
         <section id="contact">
             <div class="cardimg">
-                <img src="../images/testimage2.png" alt="card image">
                 <h1>Contact us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    perspiciatis corrupti ad minima amet reiciendis laboriosam, eius assumenda quasi.</p>
+                <p>If you have a query please use the contact form below. We will get back to you as soon as we can.</p>
             </div>
-            <form id="contactform">
-                <label>First Name</label>
-                <input type="text" id="fname">
-                <label>Last Name</label>
-                <input type="text" id="lname">
-                <label>Email</label>
-                <input type="email" id="email">
-                <label>Type Of Query</label>
-                <label class="radiochoice" for="radioanswer1">Match Tickets</label>
-                <input type="radio" id="radioanswer1">
-                <label class="radiochoice" for="radioanswer1">Season Schedule</label>
-                <input type="radio" id="radioanswer2">
-                <label class="radiochoice" for="radioanswer1">Error On Site Information</label>
-                <input type="radio" id="radioanswer3">
-                <label class="radiochoice" for="radioanswer1">Other</label>
-                <input type="radio" id="radioanswer4">
-                <label>Query Detail</label>
-                <input type="text" id="Querydescrption">
-                <input type="submit" value="Submit">
-            </form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <form id="contactform">
+                    <label>First Name</label>
+                    <input type="text" id="fname">
+                    <label>Last Name</label>
+                    <input type="text" id="lname">
+                    <label>Email</label>
+                    <input type="email" id="email">
+                    <label>Type Of Query</label>
+                    <label class="radiochoice" for="radioanswer1">Match Tickets</label>
+                    <input type="radio" name="querychoice" id="radioanswer1" required>
+                    <label class="radiochoice" for="radioanswer2">Season Schedule</label>
+                    <input type="radio" name="querychoice" id="radioanswer2" required>
+                    <label class="radiochoice" for="radioanswer3">Error On Site Information</label>
+                    <input type="radio" name="querychoice" id="radioanswer3" required>
+                    <label class="radiochoice" for="radioanswer4">Other</label>
+                    <input type="radio" name="querychoice" id="radioanswer4" required>
+                    <label>Query Detail</label>
+                    <input type="text" id="Querydescrption">
+                    <input type="submit" value="Submit">
+                </form>
+            </fieldset>
         </section>
-        <footer>Copyright 2023</footer>
+        <footer>
+            <ul>
+                <li class="lifooter">Copyright 2023.</li>
+                <li class="lifooter">Address of the organization.</li>
+                <li class="lifooter">Email: <a href="mailto:anemailgoeshere@gmail.com">Testemail@gmail.com</a></li>
+                <li class="lifooter">Tel: 0000000000</li>
+            </ul>
+        </footer>
     </section>
 </body>
 
