@@ -14,6 +14,7 @@ p {
   max-width: 90%;
   padding-top: 1%;
   padding-bottom: 2%;
+  
 }
 
 fieldset {
@@ -69,7 +70,7 @@ li::marker {
 
 #page {
   display: grid;
-  grid-template-areas: "head" "nav" "gametime" "main" "history" "tickets" "highlights" "contact" "foot";
+  grid-template-areas: "head" "nav" "gametime" "main" "history" "tickets" "highlights" "foot";
   grid-gap: 20px;
   text-align: center;
   width: 100%;
@@ -85,6 +86,7 @@ li::marker {
   grid-area: head;
   background-color: rgb(57, 5, 177);
   color: rgb(244, 234, 234);
+  
 }
 
 #page>nav,
@@ -108,6 +110,7 @@ li::marker {
 #page>main {
   grid-area: main;
   background-color: #fcfcfa;
+  background-image: url(../images/logo_small.jpg);
 }
 
 #page>#tickets {
@@ -148,6 +151,11 @@ li::marker {
   background-color: white;
   width: 70%;
   margin: auto;
+}
+
+#scrolltable{
+  max-height: 410px;
+  overflow-y: auto;
 }
 
 #page>#gametime>table>tbody {
