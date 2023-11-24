@@ -9,24 +9,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" media="only screen and (max-width: 414px)" href="../css/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 415px)" href="../css/main.css">
+    <!--Link to Chatgpt for research on grid area templates 12/11/23 
+    https://chat.openai.com/share/b2a8d324-ec99-4c4d-8d8d-39f9655b2cc6-->
 </head>
 
 <body>
     <section id="page">
         <header>
-            <img src="../images/testimage2.png" alt="Logo Charlotte Hornets">
+            <img src="../images/hornets_current_logo.png" alt="Charlotte Hornets Logo">
             <h1>Welcome to the Hornet Flyers.</h1>
             <h1>A fan website dedicated to the Charlotte Hornets</h1>
             <h1>It's time join the Hive.</h1>
         </header>
         <nav>
             <ul>
-                <li><a href="../html/index.html">Home</a></li>
-                <li><a href="../html/history.html">History</a></li>
-                <li><a href="../html/team.html">Team</a></li>
-                <li><a href="../html/tickets.html">Tickets</a></li>
-                <li><a href="#highlights">Highlights</a></li>
-                <li><a href="../html/contact.html">Contact</a></li>
+                <li><a class="button" href="../html/index.html">Home</a></li>
+                <li><a class="button" href="../html/history.html">History</a></li>
+                <li><a class="button" href="../html/team.html">Team</a></li>
+                <li><a class="button" href="../html/tickets.html">Tickets</a></li>
+                <li><a class="button" href="#highlights">Highlights</a></li>
+                <li><a class="button" href="../html/contact.html">Contact</a></li>
             </ul>
         </nav>
         <section id="gametime">
@@ -37,14 +39,14 @@
                     <tr>
                     </tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
+                        <td class="teamicons"><img src="../images/hornets_icon_img.png" alt="Charlotte Hornets Logo"> </td>
                         <td>Charlotte Hornets</td>
                         <td rowspan="2" class="bordertable"></td>
                         <!--I understand that inline css is not allowed but I was unable to achieve the desired result of having a row span 2 rows without using the inline css of rowspan="2"-->
                         <td rowspan="2">November 18th 6:00pm EST</td>
                     </tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/New_York_Knicks.png" alt="card image"> </td>
+                        <td class="teamicons"><img src="../images/New_York_Knicks.png" alt="New York Nicks Logo"> </td>
                         <td>New York Knicks
                         </td>
                     </tr>
@@ -56,13 +58,13 @@
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
+                        <td class="teamicons"><img src="../images/hornets_icon_img.png" alt="Charlotte Hornets Logo"> </td>
                         <td>Charlotte Hornets</td>
                         <td rowspan="2" class="bordertable"></td>
                         <td rowspan="2">November 20th 7:00pm EST</td>
                     </tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/Boston_Celtics.png" alt="card image"> </td>
+                        <td class="teamicons"><img src="../images/Boston_Celtics.png" alt="Boston Celtics Logo"> </td>
                         <td>Boston Celtics</td>
                     </tr>
                     <tr class="borderrow">
@@ -73,13 +75,13 @@
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
+                        <td class="teamicons"><img src="../images/hornets_icon_img.png" alt="Charlotte Hornets Logo"> </td>
                         <td>Charlotte Hornets</td>
                         <td rowspan="2" class="bordertable"></td>
                         <td rowspan="2">November 22 7:00pm EST</td>
                     </tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/Washington_Wizards.png" alt="card image"> </td>
+                        <td class="teamicons"><img src="../images/Washington_Wizards.png" alt="Washington Wizards Logo"> </td>
                         <td rowspan="2">Washington Wizards</td>
                     </tr>
                     <tr class="borderrow">
@@ -90,13 +92,13 @@
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
+                        <td class="teamicons"><img src="../images/hornets_icon_img.png" alt="Charlotte Hornets Logo"> </td>
                         <td>Charlotte Hornets</td>
                         <td rowspan="2" class="bordertable"></td>
                         <td rowspan="2">November 26 6:00pm EST</td>
                     </tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/Orlando_Magic.png" alt="card image"> </td>
+                        <td class="teamicons"><img src="../images/Orlando_Magic.png" alt="Orlando Magic Logo"> </td>
                         <td rowspan="2">Orlando Magic</td>
                     </tr>
                     <tr class="borderrow">
@@ -107,13 +109,13 @@
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/logo_responsive_version.png" alt="card image"> </td>
+                        <td class="teamicons"><img src="../images/hornets_icon_img.png" alt="Charlotte Hornets Logo"> </td>
                         <td>Charlotte Hornets</td>
                         <td rowspan="2" class="bordertable"></td>
                         <td rowspan="2">November 28 7:30pm EST</td>
                     </tr>
                     <tr>
-                        <td class="teamicons"><img src="../images/New_York_Knicks.png" alt="card image"> </td>
+                        <td class="teamicons"><img src="../images/New_York_Knicks.png" alt="New York Knicks Logo"> </td>
                         <td rowspan="2">New York Nicks</td>
                     </tr>
                     <tr class="borderrow">
@@ -126,30 +128,30 @@
         <main>
             <section id="team">
                 <div class="cardimg">
-                    <img src="../images/testimage2.png" alt="card image">
+                    <img src="../images/hornets_current_logo.png" alt="Charlotte Hornets Logo">
                     <h1>Meet the Team</h1>
                     <p>Ready to meet the current roster for the Charlotte Hornets?</p>
                     <p>Click below to see 2023/24 Roster</p>
-                    <h1><a class="ticketbutton" href="../html/team.html">Meet the team</a></h1>
+                    <h1><a class="ticketbutton button" href="../html/team.html">Meet the team</a></h1>
                 </div>
             </section>
         </main>
         <section id="history">
             <div class="cardimg">
-                <img src="../images/first_logo.png" alt="card image">
-                <img src="../images/bobcat_era.png" alt="card image">
+                <img src="../images/first_logo.png" alt="Original Hornets Logo">
+                <img src="../images/bobcat_era.png" alt="Charlotte Bobcats Logo">
                 <h1>History of the Hornets</h1>
                 <p>Wanna know how the hornets got started? We've got you covered.</p>
-                <h1><a class="ticketbutton" href="../html/history.html">Hornets History</a></h1>
+                <h1><a class="ticketbutton button" href="../html/history.html">Hornets History</a></h1>
             </div>
         </section>
         <section id="tickets">
             <div class="cardimg">
-                <img src="../images/testimage2.png" alt="card image">
+                <img src="../images/hornets_current_logo.png" alt="Charlotte Hornets Logo">
                 <h1>Current Season Tickets</h1>
                 <p>Looking for tickets for the current season? We've got you covered.</p>
                 <p>Click below to see all available seating options.</p>
-                <h1><a class="ticketbutton" href="../html/tickets.html">Match Tickets</a></h1>
+                <h1><a class="ticketbutton button" href="../html/tickets.html">Match Tickets</a></h1>
             </div>
         </section>
         <section id="highlights">

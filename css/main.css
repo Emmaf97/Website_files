@@ -8,6 +8,12 @@ iframe {
   width: 1190px;
   height: 569px;
 }
+.button:focus{
+  outline: 2px solid white;
+  background-color: rgb(247, 7, 7);
+  color: white;
+
+}
 
 p {
   margin: auto;
@@ -77,6 +83,17 @@ li::marker {
   border-radius: 5px;
 }
 
+/*
+Please see the chat log below where I researched different approaches to using common elements for multiple grids.
+After researching I came to the conclusion that I was calling the elements wrong (they are unique id's as they apply to different pages but they share common elements)and adjusted the necessary code.
+The unique id's use the common elements of header, nav and footer while also having extra elements on the page.
+The reason for this was to use take into account the reusabilty of certain elements on the page without having to duplicate the code again. 
+This was the best solution I could come up with that still met the criteria of the assignment.
+
+12/11/23 chatgpt chat log
+https://chat.openai.com/share/b2a8d324-ec99-4c4d-8d8d-39f9655b2cc6
+
+ */
 #page>header,
 #historypage>header,
 #ticketpage>header,
@@ -96,7 +113,8 @@ li::marker {
 #teampage>nav,
 #contactpage>nav {
   grid-area: nav;
-  background-color: #b1f4f8;
+  /* background-color: #b1f4f8; */
+  background-color: #2F6888;
   font-size: large;
   border: solid #33798A 1px;
   font-weight: bolder;
@@ -197,7 +215,6 @@ table.td.bordertable{
 
 ul {
   text-align: center;
-
 }
 
 li {
@@ -210,6 +227,7 @@ li {
   list-style: none;
   border: solid blue 1px;
   border-radius: 20px;
+  background-color: white;
 }
 
 li.lifooter {
@@ -221,6 +239,7 @@ li.lifooter {
   display: block;
   margin: auto;
   font-size: small;
+  background-color: rgb(57, 5, 177);
 }
 
 li.lifooter:hover {
@@ -228,7 +247,7 @@ li.lifooter:hover {
 }
 
 li:hover {
-  background-color: aqua;
+  background-color: #b1f4f8;
 }
 
 a {

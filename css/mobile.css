@@ -8,7 +8,9 @@ iframe {
   width: auto;
   height: 300px;
 }
-
+.button:focus{
+  background-color: rgb(250, 251, 252);
+}
 p {
   margin: auto;
   max-width: 90%;
@@ -25,7 +27,6 @@ fieldset {
 
 .playerimage {
   width: 100%;
-  /* height: 50%; */
   object-fit: cover;
 }
 
