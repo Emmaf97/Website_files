@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(190, 185, 216);
+  background-color: White;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
 }
@@ -25,7 +25,7 @@ fieldset {
 
 .playerimage {
   width: 100%;
-  height: 50%;
+  /* height: 50%; */
   object-fit: cover;
 }
 
@@ -86,6 +86,8 @@ li::marker {
   grid-area: head;
   background-color: rgb(57, 5, 177);
   color: rgb(244, 234, 234);
+  border: solid #33798A 1px;
+  border-radius: 20px;
   
 }
 
@@ -97,6 +99,8 @@ li::marker {
   grid-area: nav;
   background-color: #b1f4f8;
   font-size: large;
+  border: solid #33798A 1px;
+  border-radius: 20px;
 
 }
 
@@ -105,29 +109,41 @@ li::marker {
   width: 100%;
   background-color: white;
   margin: auto;
+  border: solid #33798A 1px;
+  border-radius: 20px;
 }
 
 #page>main {
   grid-area: main;
   background-color: #fcfcfa;
-  background-image: url(../images/logo_small.jpg);
+  color: white;
+  background-image: url(../images/bg_cardimg.png);
+  border: solid #33798A 1px;
+  border-radius: 20px;
 }
 
 #page>#tickets {
   grid-area: tickets;
-  background-color: #fcfcfa;
+  background-image: url(../images/bg_cardimg.png);
+  color: white;
+  border: solid #33798A 1px;
+  border-radius: 20px;
 }
 
 #page>#history {
   grid-area: history;
-  background-color: #fcfcfa;
-
+  color: white;
+  background-image: url(../images/bg_cardimg.png);
+  border: solid #33798A 1px;
+  border-radius: 20px;
 }
 
 #page>#highlights {
   grid-area: highlights;
   background-color: #fcfcfa;
   height: auto;
+  border: solid #33798A 1px;
+  border-radius: 20px;
 }
 
 #page>footer,
@@ -141,7 +157,9 @@ li::marker {
   color: whitesmoke;
   width: 100%;
   margin: auto;
-  border-radius: 5px;
+  border: solid #33798A 1px;
+  border-radius: 20px;
+  /* border-radius: 5px; */
   text-align: center;
 }
 
@@ -279,32 +297,38 @@ a:visited {
 
 #teampage>#playerset1 {
   grid-area: playerset1;
-  background-color: aqua;
+  background-color: white;
+  color: white;
 }
 
 #teampage>#playerset2 {
   grid-area: playerset2;
-  background-color: aqua;
+  background-color: white;
+  color: white;
 }
 
 #teampage>#playerset3 {
   grid-area: playerset3;
-  background-color: aqua;
+  background-color: white;
+  color: white;
 }
 
 #teampage>#playerset4 {
   grid-area: playerset4;
-  background-color: aqua;
+  background-color: white;
+  color: white;
 }
 
 #teampage>#playerset5 {
   grid-area: playerset5;
-  background-color: aqua;
+  background-color: white;
+  color: white;
 }
 
 #teampage>#playerset6 {
   grid-area: playerset6;
-  background-color: aqua;
+  background-color: white;
+  color: white;
 }
 
 .cardimgteam {
@@ -323,8 +347,9 @@ a:visited {
   padding-bottom: 10%;
   border: solid white 1px;
   border-radius: 20px;
+  color: white;
   width: 100%;
-  background-color: #0103FF;
+  background-image: url(../images/bg_cardimg.png);
   margin-bottom: 6%;
 }
 
@@ -332,30 +357,39 @@ a:visited {
   border: solid rgb(245, 245, 249) 1px;
   border-radius: 20px;
   padding: 10px;
+  background-color: white;
 }
 
 #historypage>#earlyinfo {
   grid-area: earlyinfo;
   background-color: #fcfcfa;
   height: auto;
+  border: solid #33798A 1px;
+  border-radius: 20px;
 }
 
 #historypage>#extrainfo {
   grid-area: extrainfo;
   background-color: #fcfcfa;
   height: auto;
+  border: solid #33798A 1px;
+  border-radius: 20px;
 }
 
 #historypage>#history {
   grid-area: history;
   background-color: #fcfcfa;
   height: auto;
+  border: solid #33798A 1px;
+  border-radius: 20px;
 }
 
 #historypage>#currentteam {
   grid-area: currentteam;
   background-color: #fcfcfa;
   height: auto;
+  border: solid #33798A 1px;
+  border-radius: 20px;
 }
 
 #contactpage {
