@@ -83,17 +83,6 @@ li::marker {
   border-radius: 5px;
 }
 
-/*
-Please see the chat log below where I researched different approaches to using common elements for multiple grids.
-After researching I came to the conclusion that I was calling the elements wrong (they are unique id's as they apply to different pages but they share common elements)and adjusted the necessary code.
-The unique id's use the common elements of header, nav and footer while also having extra elements on the page.
-The reason for this was to use take into account the reusabilty of certain elements on the page without having to duplicate the code again. 
-This was the best solution I could come up with that still met the criteria of the assignment.
-
-12/11/23 chatgpt chat log
-https://chat.openai.com/share/b2a8d324-ec99-4c4d-8d8d-39f9655b2cc6
-
- */
 #page>header,
 #historypage>header,
 #ticketpage>header,
