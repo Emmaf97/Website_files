@@ -2,5 +2,4 @@ I do not own any of the icon images used in this site all rights go to the NBA. 
 I do not own any text used in this project, it was sourced from wikipedia.
 
 Here is the link to view the current site.
-https://emmaf97.github.io/Website_files/html/index.html
-The link will be removed in time to demonstrate my next portfolio piece.
+https://emmaf97.github.io/Website_files/html/index.html - This link has now been removed in order to demonstrate my next portfolio piece.
